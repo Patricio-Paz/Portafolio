@@ -1,8 +1,14 @@
 # Node / Frontend
 node_modules/
 frontend/node_modules/
+dist/
 frontend/dist/
 .vite/
+
+# Variables de entorno
+.env
+.env.*
+!.env.example
 
 # Python / Django
 __pycache__/
@@ -10,12 +16,18 @@ __pycache__/
 *$py.class
 *.sqlite3
 *.db
+venv/
+env/
 backend/venv/
 backend/env/
-.env
-.env.local
 
-# IDE & System
-.DS_Store
+# Logs
+*.log
+
+# IDE
 .vscode/
 .idea/
+
+# Sistema
+.DS_Store
+Thumbs.db
