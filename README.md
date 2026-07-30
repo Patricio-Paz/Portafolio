@@ -1,6 +1,6 @@
 # Portafolio Profesional — Patricio Paz
 
-Portafolio web profesional de Patricio Paz (Desarrollador Full Stack / Backend Developer Junior), desarrollado en React + Vite con backend en Django REST Framework.
+Portafolio web profesional  Patricio Paz (Desarrollador Full Stack / Backend Developer Junior), desarrollado en React + Vite con backend en Django REST Framework.
 
 ---
 
