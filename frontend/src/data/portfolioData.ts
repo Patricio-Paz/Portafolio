@@ -22,13 +22,13 @@ export const SKILLS_LIST: Skill[] = [
 
   // Backend
   { id: 'python', name: 'Python', category: 'backend', level: 'Avanzado', years: 3, lastProject: 'Desarrollo de Lógica & APIs Backend', icon: 'Terminal', featured: true },
-  { id: 'django', name: 'Django', category: 'backend', level: 'Avanzado', years: 2, lastProject: 'AlumnosTareas & Proyectos Web', icon: 'Layers', featured: true },
+  { id: 'django', name: 'Django', category: 'backend', level: 'Avanzado', years: 2, lastProject: 'Gestor De Tareas & Proyectos Web', icon: 'Layers', featured: true },
   { id: 'drf', name: 'Django REST Framework', category: 'backend', level: 'Avanzado', years: 2, lastProject: 'Endpoints REST, Serializers & Router', icon: 'Cpu', featured: true },
   { id: 'nodejs', name: 'Node.js', category: 'backend', level: 'Intermedio', years: 1, lastProject: 'Servicios Asíncronos & Microservicios', icon: 'Server' },
   { id: 'rest_api', name: 'APIs REST', category: 'backend', level: 'Avanzado', years: 2, lastProject: 'Diseño CRUD & Endpoints Reutilizables', icon: 'Globe', featured: true },
 
   // Bases de Datos (únicamente PostgreSQL y Supabase)
-  { id: 'postgresql', name: 'PostgreSQL', category: 'database', level: 'Avanzado', years: 2, lastProject: 'AlumnosTareas & Modelado Relacional', icon: 'Database', featured: true },
+  { id: 'postgresql', name: 'PostgreSQL', category: 'database', level: 'Avanzado', years: 2, lastProject: 'Gestor De Tareas & Modelado Relacional', icon: 'Database', featured: true },
   { id: 'supabase', name: 'Supabase', category: 'database', level: 'Intermedio', years: 1, lastProject: 'Bases de Datos Cloud & Auth', icon: 'Flame', featured: true },
 
   // Cloud e Infraestructura
@@ -116,14 +116,14 @@ export const TIMELINE_ITEMS: TimelineItem[] = [
     badgeText: 'Proyecto Inteligente'
   },
   {
-    id: 't-proj-alumnos',
+    id: 't-proj-gestor-tareas',
     type: 'project',
-    title: 'AlumnosTareas Backend API',
+    title: 'Gestor De Tareas',
     organization: 'Proyecto Portafolio',
     period: '2026',
-    description: 'Desarrollo de API RESTful en Django REST Framework para gestionar 2 entidades relacionadas (alumnos y tareas) con serializers y rutas reusables.',
-    technologies: ['Python', 'Django', 'DRF', 'PostgreSQL'],
-    badgeText: 'Proyecto Backend'
+    description: 'Aplicación web interactiva para la gestión eficiente de tareas e hitos con interfaz moderna en React, TypeScript y despliegue en Vercel.',
+    technologies: ['React', 'TypeScript', 'Vercel'],
+    badgeText: 'Proyecto Web Full Stack'
   }
 ];
 
@@ -170,43 +170,43 @@ export const PROJECTS_LIST: Project[] = [
     }
   },
   {
-    id: 'alumnos-tareas',
-    title: 'AlumnosTareas Backend API',
-    subtitle: 'API RESTful en Django REST Framework & PostgreSQL/SQLite',
+    id: 'gestor-tareas',
+    title: 'Gestor De Tareas',
+    subtitle: 'Aplicación Web para Gestión Inteligente de Tareas & Proyectos',
     category: 'Full Stack',
-    description: 'Aplicación backend diseñada para gestionar 2 entidades relacionadas (alumnos y tareas), exponiendo operaciones CRUD mediante endpoints REST estructurados con serializers, rutas y vistas reusables.',
-    problem: 'Necesidad de estructurar un sistema backend organizado que gestione la relación entre entidades educativas y asignaciones de forma segura y mantenible.',
-    solution: 'Diseño de modelos relacionales en Django ORM con relaciones Key/ForeignKey, serializers estructurados en DRF y endpoints para el ciclo de vida completo de alumnos y tareas.',
-    technologies: ['Python', 'Django', 'Django REST Framework', 'PostgreSQL', 'SQLite', 'Postman', 'Git'],
+    description: 'Aplicación web interactiva diseñada para la organización, seguimiento y priorización ágil de tareas en tiempo real con una experiencia de usuario limpia y responsiva.',
+    problem: 'Necesidad de contar con una herramienta centralizada, intuitiva y rápida para organizar actividades diarias, controlar estados y mejorar la productividad.',
+    solution: 'Desarrollo e implementación de un Gestor de Tareas Full Stack desplegado en la nube Vercel, optimizado para alto rendimiento y uso fluido.',
+    technologies: ['React', 'TypeScript', 'Vercel', 'JavaScript', 'HTML/CSS'],
     architecture: {
-      frontend: 'Consumo preparado para clientes web/móvil y pruebas mediante Postman.',
-      backend: 'Django 5 REST Framework con router REST, serializers y validadores personalizados.',
-      database: 'PostgreSQL y SQLite con esquemas relacionales optimizados.',
-      infrastructure: 'Entorno virtualizado Python con dependencias aisladas.',
-      pipeline: 'Repositorio institucional en GitHub con control de versiones.'
+      frontend: 'SPA responsiva e interactiva construida en React con TypeScript.',
+      backend: 'Servicios web RESTful para gestión fluida de tareas.',
+      database: 'Almacenamiento persistente optimizado para la web.',
+      infrastructure: 'Despliegue automatizado en la infraestructura de Vercel.',
+      pipeline: 'Integración continua a través de GitHub y Vercel Deployments.'
     },
     repoUrl: '',
-    demoUrl: '',
+    demoUrl: 'https://taskflow-flame-psi.vercel.app/',
     metrics: [
-      { label: 'Entidades Relacionadas', value: '2 (Alumnos/Tareas)' },
-      { label: 'Respuestas API', value: 'JSON REST' },
-      { label: 'Pruebas de Endpoint', value: '100% Postman' }
+      { label: 'Plataforma Cloud', value: 'Vercel' },
+      { label: 'Tipo de App', value: 'Full Stack SPA' },
+      { label: 'Disponibilidad', value: '100% Online' }
     ],
     images: [
-      { url: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80', caption: 'Pruebas de Endpoints REST en Postman para Alumnos y Tareas' }
+      { url: 'https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?auto=format&fit=crop&w=1200&q=80', caption: 'Plataforma Gestor De Tareas en Vivo en Vercel' }
     ],
     documentation: {
-      overview: 'Backend API enfocado en la reutilización de código y estructuración limpia de serializers en Django REST Framework.',
+      overview: 'Aplicación web enfocada en la gestión eficiente de flujos de trabajo personal y de equipo.',
       apiEndpoints: [
-        { method: 'GET', path: '/api/alumnos/', description: 'Listar catálogo de alumnos registrados.' },
-        { method: 'POST', path: '/api/alumnos/', description: 'Registrar un nuevo alumno en la base de datos.' },
-        { method: 'GET', path: '/api/alumnos/{id}/tareas/', description: 'Obtener tareas asociadas a un alumno específico.' },
-        { method: 'DELETE', path: '/api/tareas/{id}/', description: 'Eliminar asignación de tarea.' }
+        { method: 'GET', path: '/api/tasks/', description: 'Obtiene el listado de tareas registradas y filtradas por estado.' },
+        { method: 'POST', path: '/api/tasks/', description: 'Crea una nueva tarea con título, prioridad y fecha límite.' },
+        { method: 'PUT', path: '/api/tasks/{id}/', description: 'Actualiza el estado o detalles de una tarea.' },
+        { method: 'DELETE', path: '/api/tasks/{id}/', description: 'Elimina una tarea existente.' }
       ],
       keyAlgorithms: [
-        'Modelado ORM de relación 1-a-N entre Alumnos y Tareas',
-        'Serializadores anidados y reutilizables en DRF',
-        'Rutas REST con DefaultRouter de Django'
+        'Filtrado y ordenamiento dinámico en tiempo real',
+        'Persistencia y sincronización de estado',
+        'Diseño responsive optimizado para dispositivos móviles'
       ]
     }
   }

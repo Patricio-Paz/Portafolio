@@ -8,7 +8,8 @@ import {
   FolderGit2, 
   ArrowRight, 
   Maximize2,
-  Cpu
+  Cpu,
+  ExternalLink
 } from 'lucide-react';
 
 export const ProjectsSection: React.FC = () => {
@@ -119,8 +120,8 @@ export const ProjectsSection: React.FC = () => {
                 </div>
               </div>
 
-              {/* Card Footer Action: Ver Proyecto Only */}
-              <div className="pt-4 border-t border-white/10 flex items-center justify-between">
+              {/* Card Footer Action: Ver Proyecto & Demo */}
+              <div className="pt-4 border-t border-white/10 flex items-center justify-between gap-2 flex-wrap">
                 <button
                   onClick={() => setSelectedProject(proj)}
                   className="flex items-center gap-1.5 px-4 py-2 rounded-xl bg-blue-600/20 border border-blue-500/30 text-blue-300 text-xs font-semibold hover:bg-blue-600/30 transition-all"
@@ -128,6 +129,17 @@ export const ProjectsSection: React.FC = () => {
                   <span>Ver Caso de Estudio</span>
                   <ArrowRight className="w-3.5 h-3.5" />
                 </button>
+                {proj.demoUrl && (
+                  <a
+                    href={proj.demoUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-emerald-600/20 border border-emerald-500/40 text-emerald-300 text-xs font-mono font-bold hover:bg-emerald-600/30 transition-all"
+                  >
+                    <span>Ver Demo</span>
+                    <ExternalLink className="w-3.5 h-3.5" />
+                  </a>
+                )}
               </div>
 
             </div>

@@ -3,7 +3,8 @@ import { Project } from '../../types/portfolio';
 import { SmartYardDemo } from './SmartYardDemo';
 import { 
   X, 
-  Cpu
+  Cpu,
+  ExternalLink
 } from 'lucide-react';
 
 interface ProjectModalProps {
@@ -138,7 +139,20 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) 
         </div>
 
         {/* Modal Footer Links */}
-        <div className="p-6 border-t border-white/10 bg-white/5 flex items-center justify-end">
+        <div className="p-6 border-t border-white/10 bg-white/5 flex items-center justify-between gap-4">
+          {project.demoUrl ? (
+            <a
+              href={project.demoUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-mono font-bold transition-all shadow-lg shadow-emerald-600/20"
+            >
+              <ExternalLink className="w-4 h-4" />
+              <span>Ver Demo en Vivo</span>
+            </a>
+          ) : (
+            <div />
+          )}
           <button
             onClick={onClose}
             className="px-6 py-2.5 rounded-xl bg-blue-600 hover:bg-blue-500 text-white text-xs font-mono font-bold transition-all"
