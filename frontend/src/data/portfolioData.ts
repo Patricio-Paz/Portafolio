@@ -124,6 +124,16 @@ export const TIMELINE_ITEMS: TimelineItem[] = [
     description: 'Aplicación web interactiva para la gestión eficiente de tareas e hitos con interfaz moderna en React, TypeScript y despliegue en Vercel.',
     technologies: ['React', 'TypeScript', 'Vercel'],
     badgeText: 'Proyecto Web Full Stack'
+  },
+  {
+    id: 't-proj-nova-dental',
+    type: 'project',
+    title: 'Nova Clínica Dental',
+    organization: 'Proyecto Portafolio',
+    period: '2026',
+    description: 'Plataforma web médica con agendamiento de citas en línea por especialidad, catálogo interactivo de tratamientos, comparador visual de casos y despliegue en Vercel.',
+    technologies: ['React', 'TypeScript', 'Vite', 'Vercel'],
+    badgeText: 'Plataforma Médica Online'
   }
 ];
 
@@ -207,6 +217,47 @@ export const PROJECTS_LIST: Project[] = [
         'Filtrado y ordenamiento dinámico en tiempo real',
         'Persistencia y sincronización de estado',
         'Diseño responsive optimizado para dispositivos móviles'
+      ]
+    }
+  },
+  {
+    id: 'nova-dental',
+    title: 'Nova Clínica Dental',
+    subtitle: 'Plataforma Odontológica Premium & Sistema de Agendamiento Online',
+    category: 'Full Stack',
+    description: 'Plataforma web médica orientada a alta conversión para clínica dental. Integra agendamiento de citas en línea por especialidad, catálogo interactivo de tratamientos, comparador visual de casos (Antes/Después) y módulos de confianza del paciente.',
+    problem: 'Las clínicas odontológicas enfrentan ausentismo y baja conversión digital por la falta de un sistema intuitivo para agendar citas rápidamente y visualizar resultados de tratamientos.',
+    solution: 'Desarrollo de una SPA médica responsiva con flujo interactivo de agendamiento online, catálogo dinámico de tratamientos por especialista y comparativas antes/después con soporte multi-dispositivo.',
+    technologies: ['React', 'TypeScript', 'Vite', 'Lucide Icons', 'HTML/CSS', 'Vercel'],
+    architecture: {
+      frontend: 'SPA responsiva e interactiva desarrollada con React 19, TypeScript y Vite para una navegación ultrarrápida.',
+      backend: 'Flujo client-side interactivo de agendamiento con selección dinámica de especialista, fecha y tratamiento.',
+      database: 'Estructura de datos optimizada para gestión de citas, servicios odontológicos y testimonios.',
+      infrastructure: 'Despliegue automatizado y alojado en la red global de Vercel.',
+      pipeline: 'Integración continua y entregas mediante GitHub y Vercel Deployments.'
+    },
+    repoUrl: '',
+    demoUrl: 'https://nova-dental-phi.vercel.app/',
+    metrics: [
+      { label: 'Plataforma Cloud', value: 'Vercel' },
+      { label: 'Tasa de Conversión UX', value: 'Optimizado' },
+      { label: 'Disponibilidad', value: '100% Online' }
+    ],
+    images: [
+      { url: 'https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1200&q=80', caption: 'Plataforma Nova Clínica Dental & Agendamiento Online' },
+      { url: 'https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&w=1200&q=80', caption: 'Módulo de Tratamientos y Especialistas Odontológicos' }
+    ],
+    documentation: {
+      overview: 'Aplicación web médica diseñada para la captación, evaluación y agendamiento ágil de pacientes en clínica odontológica.',
+      apiEndpoints: [
+        { method: 'GET', path: '/api/treatments/', description: 'Obtiene la lista de tratamientos dentales y especialidades disponibles.' },
+        { method: 'POST', path: '/api/booking/', description: 'Procesa y confirma una reserva de cita médica con especialista.' },
+        { method: 'GET', path: '/api/testimonials/', description: 'Retorna testimonios verificados de pacientes y casos de éxito.' }
+      ],
+      keyAlgorithms: [
+        'Filtrado y pre-selección de tratamientos para formulario de reserva',
+        'Slider comparativo interactivo de Antes y Después',
+        'Diseño responsive optimizado para dispositivos móviles y conversión'
       ]
     }
   }
