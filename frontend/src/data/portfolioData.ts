@@ -134,6 +134,16 @@ export const TIMELINE_ITEMS: TimelineItem[] = [
     description: 'Plataforma web médica con agendamiento de citas en línea por especialidad, catálogo interactivo de tratamientos, comparador visual de casos y despliegue en Vercel.',
     technologies: ['React', 'TypeScript', 'Vite', 'Vercel'],
     badgeText: 'Plataforma Médica Online'
+  },
+  {
+    id: 't-proj-pokedex',
+    type: 'project',
+    title: 'Pokédex Web App',
+    organization: 'Proyecto Portafolio',
+    period: '2026',
+    description: 'Aplicación web moderna y reactiva para consultar los 151 Pokémon de primera generación con búsqueda instantánea, favoritos en LocalStorage y PokéAPI v2.',
+    technologies: ['React 19', 'TypeScript', 'Vite', 'Axios', 'Tailwind CSS', 'Vercel'],
+    badgeText: 'Pokédex Web (151 Gen 1)'
   }
 ];
 
@@ -258,6 +268,46 @@ export const PROJECTS_LIST: Project[] = [
         'Filtrado y pre-selección de tratamientos para formulario de reserva',
         'Slider comparativo interactivo de Antes y Después',
         'Diseño responsive optimizado para dispositivos móviles y conversión'
+      ]
+    }
+  },
+  {
+    id: 'pokedex-web-app',
+    title: 'Pokédex Web App',
+    subtitle: 'Aplicación Web React 19 & TypeScript para los Primeros 151 Pokémon',
+    category: 'Frontend SPA',
+    description: 'Aplicación web Pokédex moderna, reactiva y fuertemente tipada para la exploración interactiva del catálogo de los primeros 151 Pokémon (Kanto). Integra búsqueda instantánea por nombre o ID, filtro por tipos, sistema de favoritos persistente en LocalStorage, modal interactivo de estadísticas base, líneas evolutivas y reproducción de rugidos oficiales de PokéAPI.',
+    problem: 'Necesidad de consultar rápida y dinámicamente el catálogo completo de los primeros 151 Pokémon con sus estadísticas base, tipos y evoluciones sin recargas de página ni latencia de interfaz.',
+    solution: 'Desarrollo de un cliente frontend SPA responsivo con React 19, TypeScript, Axios y Tailwind CSS v4, con manejo eficiente de estado, caché de peticiones PokéAPI, esqueletos de carga y persistencia en LocalStorage.',
+    technologies: ['React 19', 'TypeScript', 'Vite 8', 'Axios', 'Tailwind CSS v4', 'PokéAPI v2', 'LocalStorage', 'Vercel'],
+    architecture: {
+      frontend: 'SPA cliente desarrollada en React 19 con TypeScript, Tailwind CSS v4 y Vite 8 para alto rendimiento.',
+      backend: 'Consumo desacoplado y asíncrono de la API pública REST PokéAPI v2 mediante Axios.',
+      database: 'Persistencia client-side en almacenamiento local (LocalStorage) para la gestión de favoritos.',
+      infrastructure: 'Despliegue automatizado y alojado en la red global de Vercel.',
+      pipeline: 'Integración y despliegue continuo a través de GitHub y Vercel Deployments.'
+    },
+    repoUrl: '',
+    demoUrl: 'https://pokedex-nine-kohl-22.vercel.app/',
+    metrics: [
+      { label: 'Catálogo Pokémon', value: '151 (Gen 1)' },
+      { label: 'Plataforma Cloud', value: 'Vercel' },
+      { label: 'Respuesta PokéAPI', value: 'Instantánea' }
+    ],
+    images: [
+      { url: '/pokedex_preview.png', caption: 'Aplicación Web Pokédex — Explorador 151 Pokémon Gen 1' }
+    ],
+    documentation: {
+      overview: 'Aplicación web cliente enfocada en la exploración fluida y detallada de la primera generación de Pokémon mediante consumo de PokéAPI v2.',
+      apiEndpoints: [
+        { method: 'GET', path: '/api/v2/pokemon?limit={limit}&offset={offset}', description: 'Obtiene la lista paginada de Pokémon de la primera generación.' },
+        { method: 'GET', path: '/api/v2/pokemon/{id|name}', description: 'Obtiene estadísticas base, tipos, peso, altura e imágenes oficiales.' },
+        { method: 'GET', path: '/api/v2/pokemon-species/{id}', description: 'Obtiene la descripción de especie y la URL de la cadena evolutiva.' }
+      ],
+      keyAlgorithms: [
+        'Filtrado y búsqueda instantánea por nombre e ID (#1 al #151)',
+        'Gestión de lista de favoritos persistente en LocalStorage con custom hook',
+        'Paginación inteligente con selectores de tamaño y esqueletos de carga (Shimmer UI)'
       ]
     }
   }
