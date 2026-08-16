@@ -124,7 +124,7 @@ export const AboutSection: React.FC = () => {
                 Disponibilidad Inmediata para Equipos Backend, Full Stack & Soporte Web
               </h3>
               <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
-                Perfil junior con base técnica sólida en backend, experiencia práctica demostrable en plataformas web reales y portafolio enfocado en APIs REST, integración de servicios y mejora continua. Preparado para aportar desde el primer día.
+                Perfil profesional con base técnica sólida en backend, experiencia práctica demostrable en plataformas web reales y portafolio enfocado en APIs REST, integración de servicios y mejora continua. Preparado para aportar desde el primer día.
               </p>
             </div>
 

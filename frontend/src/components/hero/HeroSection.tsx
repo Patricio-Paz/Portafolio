@@ -221,7 +221,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenRecruiterDrawer 
                   Hola, soy <span className="text-gradient-electric">{PERSONAL_INFO.name}</span>
                 </h1>
                 <p className="text-lg sm:text-xl text-slate-300 font-medium leading-snug">
-                  Desarrollador Full Stack / Backend Developer Junior
+                  Desarrollador Full Stack / Backend Developer
                 </p>
                 <div className="flex flex-wrap items-center justify-center md:justify-start gap-2 pt-1 text-xs font-mono">
                   <span className="px-2.5 py-1 rounded-md bg-white/5 border border-white/10 text-blue-400">
@@ -308,7 +308,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenRecruiterDrawer 
               {/* Exact User Bio Text Highlighted */}
               <div className="text-xs sm:text-sm text-slate-200 leading-relaxed space-y-3 font-sans">
                 <p>
-                  🎓 <strong className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-indigo-300 to-purple-300 font-extrabold">Técnico Superior Analista Programador</strong> y estudiante de <strong className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-300 font-extrabold">Ingeniería en Informática en INACAP</strong>, con enfoque en desarrollo <strong className="text-emerald-400 font-bold">Backend y Full Stack Junior</strong>.
+                  🎓 <strong className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-indigo-300 to-purple-300 font-extrabold">Técnico Superior Analista Programador</strong> y estudiante de <strong className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-300 font-extrabold">Ingeniería en Informática en INACAP</strong>, con enfoque en desarrollo <strong className="text-emerald-400 font-bold">Backend y Full Stack</strong>.
                 </p>
                 <p>
                   ⚡ <strong className="text-blue-300 font-bold">Experiencia práctica</strong> desarrollando aplicaciones web con <strong className="text-indigo-300 font-semibold">Python, Django REST Framework, React y JavaScript</strong>, incluyendo creación de <strong className="text-purple-300 font-semibold">APIs REST</strong>, integración frontend-backend, manejo de bases de datos y administración de plataformas web en hosting <strong className="text-cyan-300 font-semibold">cPanel / WordPress</strong>.
@@ -347,7 +347,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenRecruiterDrawer 
           className="mt-16 pt-8 border-t border-white/10 text-center"
         >
           <p className="text-xs font-mono text-slate-400 uppercase tracking-widest mb-4">
-            Orientado a oportunidades Junior en Backend, Full Stack & Soporte Técnico Web
+            Orientado a oportunidades en Backend, Full Stack & Soporte Técnico Web
           </p>
           <div className="flex flex-wrap items-center justify-center gap-6 opacity-80 text-xs font-semibold text-slate-400">
             <span className="hover:text-blue-400 transition-colors">Python / Django Backend</span>

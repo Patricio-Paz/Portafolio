@@ -1,9 +1,7 @@
 import React, { useState } from 'react';
 import { Project } from '../../types/portfolio';
-import { SmartYardDemo } from './SmartYardDemo';
 import { 
   X, 
-  Cpu,
   ExternalLink,
   FolderGit2
 } from 'lucide-react';
@@ -14,7 +12,7 @@ interface ProjectModalProps {
 }
 
 export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) => {
-  const [activeTab, setActiveTab] = useState<'overview' | 'demo'>('overview');
+  const [activeTab] = useState<'overview'>('overview');
 
   if (!project) return null;
 
@@ -45,29 +43,6 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) 
           >
             <X className="w-5 h-5" />
           </button>
-        </div>
-
-        {/* Modal Navigation Tabs */}
-        <div className="flex flex-wrap items-center gap-2 px-6 sm:px-8 py-3 bg-white/5 border-b border-white/10 text-xs font-mono">
-          <button
-            onClick={() => setActiveTab('overview')}
-            className={`px-4 py-2 rounded-xl transition-all ${
-              activeTab === 'overview' ? 'bg-blue-600 text-white font-bold' : 'text-slate-400 hover:text-white'
-            }`}
-          >
-            Visión General
-          </button>
-          
-          {project.id === 'smartyard-tpa' && (
-            <button
-              onClick={() => setActiveTab('demo')}
-              className={`px-4 py-2 rounded-xl transition-all flex items-center gap-1.5 ${
-                activeTab === 'demo' ? 'bg-emerald-600 text-white font-bold' : 'text-emerald-400 hover:text-emerald-300'
-              }`}
-            >
-              <Cpu className="w-3.5 h-3.5" /> Live Demo 2D
-            </button>
-          )}
         </div>
 
         {/* Modal Body Content */}
@@ -130,11 +105,6 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) 
                 </div>
               </div>
             </div>
-          )}
-
-          {/* Tab 2: Live Demo (SmartYard) */}
-          {activeTab === 'demo' && (
-            <SmartYardDemo />
           )}
 
         </div>

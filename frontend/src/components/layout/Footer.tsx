@@ -19,7 +19,7 @@ export const Footer: React.FC = () => {
               </span>
             </div>
             <p className="text-xs text-slate-400 dark:text-slate-400 light:text-slate-600 max-w-sm leading-relaxed">
-              Desarrollador Full Stack / Backend Developer Junior especializado en Python, Django REST Framework, React, PostgreSQL/SQLite y Soporte Web.
+              Desarrollador Full Stack / Backend Developer especializado en Python, Django REST Framework, React, PostgreSQL/SQLite y Soporte Web.
             </p>
             <div className="flex items-center gap-3">
               <a
@@ -60,7 +60,6 @@ export const Footer: React.FC = () => {
               <li><a href="#skills" className="hover:text-blue-400 transition-colors">Stack Tecnológico</a></li>
               <li><a href="#experience" className="hover:text-blue-400 transition-colors">Experiencia Laboral</a></li>
               <li><a href="#projects" className="hover:text-blue-400 transition-colors">Casos de Estudio</a></li>
-              <li><a href="#smartyard" className="hover:text-blue-400 transition-colors">SmartYard TPA Demo</a></li>
             </ul>
           </div>
 

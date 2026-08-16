@@ -29,7 +29,6 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenRecruiterDrawer }) => {
     { name: 'Skills', href: '#skills' },
     { name: 'Experiencia', href: '#experience' },
     { name: 'Proyectos', href: '#projects' },
-    { name: 'SmartYard TPA', href: '#smartyard' },
     { name: 'Contacto', href: '#contact' },
   ];
 
@@ -54,7 +53,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenRecruiterDrawer }) => {
                 {PERSONAL_INFO.name}
               </span>
               <span className="text-xs text-blue-400 font-mono font-medium tracking-wide">
-                Full Stack / Backend Junior
+                Full Stack / Backend Developer
               </span>
             </div>
           </a>

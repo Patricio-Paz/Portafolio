@@ -1,6 +1,6 @@
 from django.urls import path, include
 from rest_framework.routers import DefaultRouter
-from .views import SkillViewSet, ProjectViewSet, TimelineViewSet, ContactViewSet, SmartYardAllocateView
+from .views import SkillViewSet, ProjectViewSet, TimelineViewSet, ContactViewSet
 
 router = DefaultRouter()
 router.register(r'skills', SkillViewSet)
@@ -10,5 +10,4 @@ router.register(r'contact', ContactViewSet)
 
 urlpatterns = [
     path('', include(router.urls)),
-    path('containers/allocate/', SmartYardAllocateView.as_view(), name='smartyard-allocate'),
 ]

@@ -2,9 +2,9 @@ import { Skill, Project, TimelineItem, WorkExperience } from '../types/portfolio
 
 export const PERSONAL_INFO = {
   name: "Patricio Paz",
-  role: "Desarrollador Full Stack / Backend Developer Junior",
+  role: "Desarrollador Full Stack / Backend Developer",
   specialties: ["Python & Django", "Django REST Framework", "React & JavaScript", "PostgreSQL & Supabase", "cPanel & Soporte Web"],
-  bioHeadline: "Técnico Superior Analista Programador y estudiante de Ingeniería en Informática en INACAP, con enfoque en desarrollo Backend y Full Stack Junior. Experiencia práctica desarrollando aplicaciones web con Python, Django REST Framework, React y JavaScript, incluyendo creación de APIs REST, integración frontend-backend, manejo de bases de datos y administración de plataformas web en hosting cPanel / WordPress. Interesado en crear soluciones tecnológicas eficientes, mejorar procesos mediante software y seguir creciendo profesionalmente dentro de equipos de desarrollo TI, aportando conocimientos en programación, bases de datos e infraestructura.",
+  bioHeadline: "Técnico Superior Analista Programador y estudiante de Ingeniería en Informática en INACAP, con enfoque en desarrollo Backend y Full Stack. Experiencia práctica desarrollando aplicaciones web con Python, Django REST Framework, React y JavaScript, incluyendo creación de APIs REST, integración frontend-backend, manejo de bases de datos y administración de plataformas web en hosting cPanel / WordPress. Interesado en crear soluciones tecnológicas eficientes, mejorar procesos mediante software y seguir creciendo profesionalmente dentro de equipos de desarrollo TI, aportando conocimientos en programación, bases de datos e infraestructura.",
   location: "Arica, Chile (Disponible Remoto / Presencial / Híbrido)",
   email: "Patricioppaz2312@gmail.com",
   phone: "+56 9 35114525",
@@ -18,7 +18,7 @@ export const SKILLS_LIST: Skill[] = [
   // Frontend (únicamente React, JavaScript, TypeScript)
   { id: 'react', name: 'React', category: 'frontend', level: 'Avanzado', years: 2, lastProject: 'Gestor de Tareas Full Stack & SaaS Barbería', icon: 'Code2', featured: true },
   { id: 'javascript', name: 'JavaScript', category: 'frontend', level: 'Avanzado', years: 2, lastProject: 'Consumo de APIs REST & Dynamic UI', icon: 'FileJson', featured: true },
-  { id: 'typescript', name: 'TypeScript', category: 'frontend', level: 'Intermedio', years: 1, lastProject: 'SmartYard TPA & Web Portfolios', icon: 'FileCode2', featured: true },
+  { id: 'typescript', name: 'TypeScript', category: 'frontend', level: 'Intermedio', years: 1, lastProject: 'Pokédex & Web Portfolios', icon: 'FileCode2', featured: true },
 
   // Backend
   { id: 'python', name: 'Python', category: 'backend', level: 'Avanzado', years: 3, lastProject: 'Desarrollo de Lógica & APIs Backend', icon: 'Terminal', featured: true },
@@ -106,14 +106,14 @@ export const TIMELINE_ITEMS: TimelineItem[] = [
     badgeText: 'Práctica Profesional'
   },
   {
-    id: 't-proj-smartyard',
+    id: 't-proj-pokedex',
     type: 'project',
-    title: 'SmartYard TPA',
+    title: 'Pokédex Web App',
     organization: 'Proyecto Portafolio',
     period: '2026',
-    description: 'Plataforma inteligente para optimización de patios portuarios con dashboard operacional 2D, alertas predictivas e IA.',
-    technologies: ['Python', 'Django REST Framework', 'React', 'TypeScript', 'PostgreSQL'],
-    badgeText: 'Proyecto Inteligente'
+    description: 'Aplicación web moderna y reactiva para consultar los 151 Pokémon de primera generación con búsqueda instantánea, favoritos en LocalStorage y PokéAPI v2.',
+    technologies: ['React 19', 'TypeScript', 'Vite', 'Axios', 'Tailwind CSS', 'Vercel'],
+    badgeText: 'Proyecto Destacado (151 Gen 1)'
   },
   {
     id: 't-proj-gestor-tareas',
@@ -134,58 +134,47 @@ export const TIMELINE_ITEMS: TimelineItem[] = [
     description: 'Plataforma web médica con agendamiento de citas en línea por especialidad, catálogo interactivo de tratamientos, comparador visual de casos y despliegue en Vercel.',
     technologies: ['React', 'TypeScript', 'Vite', 'Vercel'],
     badgeText: 'Plataforma Médica Online'
-  },
-  {
-    id: 't-proj-pokedex',
-    type: 'project',
-    title: 'Pokédex Web App',
-    organization: 'Proyecto Portafolio',
-    period: '2026',
-    description: 'Aplicación web moderna y reactiva para consultar los 151 Pokémon de primera generación con búsqueda instantánea, favoritos en LocalStorage y PokéAPI v2.',
-    technologies: ['React 19', 'TypeScript', 'Vite', 'Axios', 'Tailwind CSS', 'Vercel'],
-    badgeText: 'Pokédex Web (151 Gen 1)'
   }
 ];
 
 export const PROJECTS_LIST: Project[] = [
   {
-    id: 'smartyard-tpa',
-    title: 'SmartYard TPA',
-    subtitle: 'Plataforma Inteligente para Optimización de Patios Portuarios',
-    category: 'AI & Optimization',
-    description: 'Plataforma inteligente para la gestión y ubicación óptima de contenedores en patios portuarios. Incluye un dashboard operacional interactivo, mapa 2D de posicionamiento, alertas predictivas y asistente con IA conversacional.',
-    problem: 'En operaciones portuarias, la asignación ineficiente de ubicación para contenedores provoca movimientos extras (re-acomodos) que encarecen los costos y causan demoras en camiones.',
-    solution: 'SmartYard TPA analiza parámetros operativos clave (prioridad, peso, buque destino) para recomendar la coordenada exacta de apilamiento en tiempo real, minimizando movimientos ineficientes.',
-    technologies: ['Python', 'Django REST Framework', 'React', 'TypeScript', 'PostgreSQL', 'TailwindCSS', 'Framer Motion', 'Docker', 'IA Conversacional'],
+    id: 'pokedex-web-app',
+    title: 'Pokédex Web App',
+    subtitle: 'Aplicación Web React 19 & TypeScript para los Primeros 151 Pokémon',
+    category: 'Frontend SPA',
+    description: 'Aplicación web Pokédex moderna, reactiva y fuertemente tipada para la exploración interactiva del catálogo de los primeros 151 Pokémon (Kanto). Integra búsqueda instantánea por nombre o ID, filtro por tipos, sistema de favoritos persistente en LocalStorage, modal interactivo de estadísticas base, líneas evolutivas y reproducción de rugidos oficiales de PokéAPI.',
+    problem: 'Necesidad de consultar rápida y dinámicamente el catálogo completo de los primeros 151 Pokémon con sus estadísticas base, tipos y evoluciones sin recargas de página ni latencia de interfaz.',
+    solution: 'Desarrollo de un cliente frontend SPA responsivo con React 19, TypeScript, Axios y Tailwind CSS v4, con manejo eficiente de estado, caché de peticiones PokéAPI, esqueletos de carga y persistencia en LocalStorage.',
+    technologies: ['React 19', 'TypeScript', 'Vite 8', 'Axios', 'Tailwind CSS v4', 'PokéAPI v2', 'LocalStorage', 'Vercel'],
     architecture: {
-      frontend: 'Interfaz SPA moderna desarrollada en React con TypeScript y Framer Motion para visualización dinámica del patio.',
-      backend: 'Django REST Framework con endpoints organizados, autenticación y lógica de negocio desacoplada.',
-      database: 'PostgreSQL con índices compuestos para consultas veloces de posición de contenedores.',
-      infrastructure: 'Contenedores Docker optimizados para ejecución en servidores Linux / Cloud.',
-      pipeline: 'Integración continua vía Git/GitHub para despliegue automatizado.'
+      frontend: 'SPA cliente desarrollada en React 19 con TypeScript, Tailwind CSS v4 y Vite 8 para alto rendimiento.',
+      backend: 'Consumo desacoplado y asíncrono de la API pública REST PokéAPI v2 mediante Axios.',
+      database: 'Persistencia client-side en almacenamiento local (LocalStorage) para la gestión de favoritos.',
+      infrastructure: 'Despliegue automatizado y alojado en la red global de Vercel.',
+      pipeline: 'Integración y despliegue continuo a través de GitHub y Vercel Deployments.'
     },
     repoUrl: '',
-    demoUrl: '',
+    demoUrl: 'https://pokedex-nine-kohl-22.vercel.app/',
     metrics: [
-      { label: 'Optimización de Posicionamiento', value: '35%' },
-      { label: 'Tiempo Resp. API REST', value: '< 180 ms' },
-      { label: 'Alertas Predictivas', value: 'En tiempo real' }
+      { label: 'Catálogo Pokémon', value: '151 (Gen 1)' },
+      { label: 'Plataforma Cloud', value: 'Vercel' },
+      { label: 'Respuesta PokéAPI', value: 'Instantánea' }
     ],
     images: [
-      { url: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1200&q=80', caption: 'Dashboard Operacional & Mapa 2D de Ubicación' },
-      { url: 'https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&w=1200&q=80', caption: 'Panel de Control y Asistente IA Conversacional' }
+      { url: '/pokedex_preview.png', caption: 'Aplicación Web Pokédex — Explorador 151 Pokémon Gen 1' }
     ],
     documentation: {
-      overview: 'Sistema modular enfocado en la visibilidad completa del patio portuario y asistencia mediante inteligencia conversacional para operadores.',
+      overview: 'Aplicación web cliente enfocada en la exploración fluida y detallada de la primera generación de Pokémon mediante consumo de PokéAPI v2.',
       apiEndpoints: [
-        { method: 'GET', path: '/api/v1/yard/containers/', description: 'Obtiene el mapa de ocupación actual del patio de contenedores.' },
-        { method: 'POST', path: '/api/v1/containers/allocate/', description: 'Calcula y asigna la coordenada óptima de apilamiento.' },
-        { method: 'GET', path: '/api/v1/alerts/predictive/', description: 'Retorna alertas predictivas de posibles cuellos de botella.' }
+        { method: 'GET', path: '/api/v2/pokemon?limit={limit}&offset={offset}', description: 'Obtiene la lista paginada de Pokémon de la primera generación.' },
+        { method: 'GET', path: '/api/v2/pokemon/{id|name}', description: 'Obtiene estadísticas base, tipos, peso, altura e imágenes oficiales.' },
+        { method: 'GET', path: '/api/v2/pokemon-species/{id}', description: 'Obtiene la descripción de especie y la URL de la cadena evolutiva.' }
       ],
       keyAlgorithms: [
-        'Algoritmo de asignación óptima de espacio',
-        'Validación de prioridad y compatibilidad de buque',
-        'Asistente de IA para consultas en lenguaje natural'
+        'Filtrado y búsqueda instantánea por nombre e ID (#1 al #151)',
+        'Gestión de lista de favoritos persistente en LocalStorage con custom hook',
+        'Paginación inteligente con selectores de tamaño y esqueletos de carga (Shimmer UI)'
       ]
     }
   },
@@ -234,7 +223,7 @@ export const PROJECTS_LIST: Project[] = [
     id: 'nova-dental',
     title: 'Nova Clínica Dental',
     subtitle: 'Plataforma Odontológica Premium & Sistema de Agendamiento Online',
-    category: 'Full Stack',
+    category: 'Frontend',
     description: 'Plataforma web médica orientada a alta conversión para clínica dental. Integra agendamiento de citas en línea por especialidad, catálogo interactivo de tratamientos, comparador visual de casos (Antes/Después) y módulos de confianza del paciente.',
     problem: 'Las clínicas odontológicas enfrentan ausentismo y baja conversión digital por la falta de un sistema intuitivo para agendar citas rápidamente y visualizar resultados de tratamientos.',
     solution: 'Desarrollo de una SPA médica responsiva con flujo interactivo de agendamiento online, catálogo dinámico de tratamientos por especialista y comparativas antes/después con soporte multi-dispositivo.',
@@ -268,46 +257,6 @@ export const PROJECTS_LIST: Project[] = [
         'Filtrado y pre-selección de tratamientos para formulario de reserva',
         'Slider comparativo interactivo de Antes y Después',
         'Diseño responsive optimizado para dispositivos móviles y conversión'
-      ]
-    }
-  },
-  {
-    id: 'pokedex-web-app',
-    title: 'Pokédex Web App',
-    subtitle: 'Aplicación Web React 19 & TypeScript para los Primeros 151 Pokémon',
-    category: 'Frontend SPA',
-    description: 'Aplicación web Pokédex moderna, reactiva y fuertemente tipada para la exploración interactiva del catálogo de los primeros 151 Pokémon (Kanto). Integra búsqueda instantánea por nombre o ID, filtro por tipos, sistema de favoritos persistente en LocalStorage, modal interactivo de estadísticas base, líneas evolutivas y reproducción de rugidos oficiales de PokéAPI.',
-    problem: 'Necesidad de consultar rápida y dinámicamente el catálogo completo de los primeros 151 Pokémon con sus estadísticas base, tipos y evoluciones sin recargas de página ni latencia de interfaz.',
-    solution: 'Desarrollo de un cliente frontend SPA responsivo con React 19, TypeScript, Axios y Tailwind CSS v4, con manejo eficiente de estado, caché de peticiones PokéAPI, esqueletos de carga y persistencia en LocalStorage.',
-    technologies: ['React 19', 'TypeScript', 'Vite 8', 'Axios', 'Tailwind CSS v4', 'PokéAPI v2', 'LocalStorage', 'Vercel'],
-    architecture: {
-      frontend: 'SPA cliente desarrollada en React 19 con TypeScript, Tailwind CSS v4 y Vite 8 para alto rendimiento.',
-      backend: 'Consumo desacoplado y asíncrono de la API pública REST PokéAPI v2 mediante Axios.',
-      database: 'Persistencia client-side en almacenamiento local (LocalStorage) para la gestión de favoritos.',
-      infrastructure: 'Despliegue automatizado y alojado en la red global de Vercel.',
-      pipeline: 'Integración y despliegue continuo a través de GitHub y Vercel Deployments.'
-    },
-    repoUrl: '',
-    demoUrl: 'https://pokedex-nine-kohl-22.vercel.app/',
-    metrics: [
-      { label: 'Catálogo Pokémon', value: '151 (Gen 1)' },
-      { label: 'Plataforma Cloud', value: 'Vercel' },
-      { label: 'Respuesta PokéAPI', value: 'Instantánea' }
-    ],
-    images: [
-      { url: '/pokedex_preview.png', caption: 'Aplicación Web Pokédex — Explorador 151 Pokémon Gen 1' }
-    ],
-    documentation: {
-      overview: 'Aplicación web cliente enfocada en la exploración fluida y detallada de la primera generación de Pokémon mediante consumo de PokéAPI v2.',
-      apiEndpoints: [
-        { method: 'GET', path: '/api/v2/pokemon?limit={limit}&offset={offset}', description: 'Obtiene la lista paginada de Pokémon de la primera generación.' },
-        { method: 'GET', path: '/api/v2/pokemon/{id|name}', description: 'Obtiene estadísticas base, tipos, peso, altura e imágenes oficiales.' },
-        { method: 'GET', path: '/api/v2/pokemon-species/{id}', description: 'Obtiene la descripción de especie y la URL de la cadena evolutiva.' }
-      ],
-      keyAlgorithms: [
-        'Filtrado y búsqueda instantánea por nombre e ID (#1 al #151)',
-        'Gestión de lista de favoritos persistente en LocalStorage con custom hook',
-        'Paginación inteligente con selectores de tamaño y esqueletos de carga (Shimmer UI)'
       ]
     }
   }

@@ -17,7 +17,7 @@ export interface Project {
   id: string;
   title: string;
   subtitle: string;
-  category: 'Full Stack' | 'AI & Optimization' | 'SaaS Platform' | 'Frontend SPA';
+  category: 'Full Stack' | 'Frontend' | 'AI & Optimization' | 'SaaS Platform' | 'Frontend SPA';
   description: string;
   problem: string;
   solution: string;

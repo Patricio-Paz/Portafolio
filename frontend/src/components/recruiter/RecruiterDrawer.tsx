@@ -18,8 +18,8 @@ export const RecruiterDrawer: React.FC<RecruiterDrawerProps> = ({ isOpen, onClos
   if (!isOpen) return null;
 
   const highlightedRoles = [
-    { title: 'Desarrollador Backend Junior (Python / Django)', fit: 'Creación de APIs RESTful, serializers, vistas y ORM en PostgreSQL/SQLite.' },
-    { title: 'Desarrollador Full Stack Junior (React + DRF)', fit: 'Arquitectura desacoplada en 2 capas con consumo mediante Axios.' },
+    { title: 'Desarrollador Backend (Python / Django)', fit: 'Creación de APIs RESTful, serializers, vistas y ORM en PostgreSQL/SQLite.' },
+    { title: 'Desarrollador Full Stack (React + DRF)', fit: 'Arquitectura desacoplada en 2 capas con consumo mediante Axios.' },
     { title: 'Soporte Web & Mantenimiento de Plataformas', fit: 'Experiencia real en cPanel, WordPress, autenticación DNS (SPF, DKIM, DMARC) y respaldos.' },
     { title: 'Analista Programador / TI', fit: 'Título de Técnico Superior Analista Programador e Ingeniería en Informática en curso en INACAP.' }
   ];
@@ -60,7 +60,7 @@ export const RecruiterDrawer: React.FC<RecruiterDrawerProps> = ({ isOpen, onClos
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
             <div className="p-3 rounded-xl bg-[#06070a] border border-white/5 space-y-1">
               <span className="text-slate-500 text-[10px] uppercase font-mono block">Cargos Objetivos</span>
-              <span className="font-bold text-slate-200">Backend Junior / Full Stack Junior</span>
+              <span className="font-bold text-slate-200">Desarrollador Backend / Full Stack</span>
             </div>
 
             <div className="p-3 rounded-xl bg-[#06070a] border border-white/5 space-y-1">

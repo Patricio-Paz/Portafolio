@@ -13,8 +13,7 @@ def api_root_view(request):
             "skills": "/api/v1/skills/",
             "projects": "/api/v1/projects/",
             "timeline": "/api/v1/timeline/",
-            "contact": "/api/v1/contact/",
-            "smartyard_allocate": "/api/v1/containers/allocate/"
+            "contact": "/api/v1/contact/"
         }
     })
 
